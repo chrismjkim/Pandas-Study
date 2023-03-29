@@ -33,3 +33,16 @@ print(np.random.randint(1, 10, [3, 5]))
 
 print(np.random.randn(2, 4, 3))
 # Z(표준정규분포)에서 생성된 값으로 2*4*3 삼차원배열 생성
+
+"""
+nan(not a number)
+
+np.nan
+-> nan
+
+np.nan == 5
+-> False
+
+np.nan = np.nan
+-> False
+"""
