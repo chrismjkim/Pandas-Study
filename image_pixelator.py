@@ -150,14 +150,14 @@ h, w, c = rgbs.shape
 
 # parameters to change
 mos_n = 5
-col_n = 10
+col_n = 4
 filter_color='red' # red, green, blue 중 선택
 
 """
 mosaic(img, mos_n)
 bit_art(img, mos_n, col_n)
-color_quantization(img, col_n)
 grayscale(img)
 color_scale(img, filter_color)
 color_cluster(img, col_n)
 """
+color_quantization(img, col_n)
