@@ -9,12 +9,12 @@ def avg(list):
     return round(sum/len(list), 1)
 
 
-pixels = [1, 2, 54, 56, 57, 58, 51, 113, 115, 117, 300,301,303]
+pixels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 k = 4
 
 means = sorted(random.sample(pixels, k))
-float_means = list(means)
 print(means)
+float_means = list(means)
 prev_means = []
 
 while prev_means!=means:
@@ -34,7 +34,7 @@ while prev_means!=means:
                 clusters[index].append(i)
     # calculate_clusters_mean
     for x in range(k):
-        float_means[x] = avg(clusters[x])
+        float_means[x] = np.mean(clusters[x])
     # update means
 
     for x in range(k):
