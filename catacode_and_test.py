@@ -1,8 +1,21 @@
 import sys
 from bisect import bisect_left, bisect_right
-input = sys.stdin.readline
+import random
+import numpy as np
+def error_size(previous, current):
+    error_sum = sum(abs(previous-current))
+    return (error_sum)
 
-col_n = int(input())
+x = (1, 2, 3)
+y = (4, 5, 6)
+a = np.array(x)
+b = np.array(y)
+print(a)
+print(b)
+print(error_size(a, b))
+
+
+"""col_n = int(input())
 colset = [round(255*x/col_n) for x in range(col_n+1)] 
 
 print(colset)
@@ -27,4 +40,5 @@ if b not in colset:
     else:
         b = bisect_right(colset, b)
 
-print(r, g, b)
+print(r, g, b)"""
+
